@@ -1,2 +1,2 @@
-# helton-hcs.github.io
-GitHub personal page
+# helton.github.io
+My GitHub personal page
