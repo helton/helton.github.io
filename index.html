@@ -1,48 +1,100 @@
-<!DOCTYPE HTML>
-<html>
-	<head lang="en">
-		<title>Helton Carlos de Souza</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="assets/css/main.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Helton - Software Engineer</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/minireset.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/animations.css">
+    <script defer src="js/main.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
 
-		<!-- Google Analytics -->
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <!-- Google Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-			ga('create', 'UA-78966864-1', 'auto');
-			ga('send', 'pageview');
-		</script>
-	</head>
-	<body>
-		<div id="wrapper">
-			<header id="header">
-				<a href="https://twitter.com/h3170n" class="avatar" target="_blank"><img src="images/avatar.jpg" alt="Helton's avatar" /></a>
-				<h1>I'm <strong>Helton</strong>, a software engineer and an open source advocate<br />					
-					<em>I love what I do and I believe in making the world a better place through software</em><br />
-					Currently working at <strong><a href="http://ciandt.com">CI&T</a></strong>
-				</h1>
-				<ul class="icons">										
-					<li><a href="https://github.com/helton" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
-					<li><a href="https://linkedin.com/in/heltoncarlossouza" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
-					<li><a href="https://twitter.com/h3170n" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="https://facebook.com/heltoncarlossouza" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
-					<li><a href="mailto:heltoncarlossouza@gmail.com" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
-				</ul>
-			</header>
+        ga('create', 'UA-78966864-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+<body>
+    <div id="wallpaper" class="wallpaper" data-image="images/background.jpg"></div>
+    <div class="content">
 
-			<footer id="footer">
-				<p>Helton Carlos de Souza &copy; 2016. All rights reserved.</p>
-				<small>Design: <a href="http://templated.co">TEMPLATED</a></small>
-			</footer>
-		</div>
+        <aside class="side">
+            <figure id="picture" class="picture">
+                <div class="picture-shadow"></div>
+                <img id="pictureImage"
+                    class="picture-image"
+                    src="images/me.jpg"
+                    alt="Portrait of Helton"
+                    width="320"
+                    height="320">
+            </figure>
+        </aside>
+        <main class="about">
+            <h1 class="name">
+                Hi, I'm Helton
+            </h1>
+            <p class="job">
+                Software Engineer
+            </p>
+            <hr class="hr">
+            <div class="description">
+                <p>a <strong>software engineer</strong> and an <strong>open source</strong> advocate.</p>
+                <p><em>I love what I do and I believe in making the world a better place through software</em></p>
+            </div>
+            <div class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Campinas - SP, Brazil</p>
+            </div>
+            <div class="contact">
+                <a class="button" href="mailto:heltoncarlossouza@gmail.com">
+                    Get in touch
+                </a>
+            </div>
+            <ul class="social">
+                <li>
+                    <a href="https://github.com/helton" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com/in/heltoncarlossouza" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/h3170n" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://facebook.com/heltoncarlossouza" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+            </ul>
+        </main>
 
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.poptrox.min.js"></script>
-		<script src="assets/js/skel.min.js"></script>
-		<script src="assets/js/main.js"></script>
-	</body>
+    </div>
+
+    <noscript>
+        <style type="text/css">
+            .wallpaper {
+                animation-name: zoomOut;
+            }
+
+            .picture {
+                animation-name: dropIn;
+            }
+        </style>
+    </noscript>
+</body>
 </html>
