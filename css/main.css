@@ -72,6 +72,36 @@ a {
 
 /* 3. Specific */
 
+.page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: flex-end;
+    height: 5rem;
+}
+
+.navigation li {
+    margin: 1rem;
+}
+
+.navigation li a {
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    user-select: none;
+    will-change: box-shadow, transform;
+}
+
+.navigation li a:hover {
+    border-bottom: 1px solid white;
+}
+
 .wallpaper {
     background-image: url(../images/background.jpg);
     background-position: center;    
@@ -83,7 +113,7 @@ a {
 .content {
     display: flex;
     position: relative;
-    min-height: 100vh;
+    flex-grow: 1;
 }
 
 .side {
@@ -330,6 +360,10 @@ a {
 /* 4. Responsiveness */
 
 @media screen and (max-width: 799px) {
+    .navigation ul {
+        margin: 0;
+    }
+    
     .content {
         flex-direction: column;
         justify-content: center;
@@ -352,6 +386,10 @@ a {
 }
 
 @media screen and (min-width: 800px) {
+    .navigation ul {
+        margin: 0 15rem;
+    }
+
     .content {
         align-items: center;
         justify-content: space-around;
